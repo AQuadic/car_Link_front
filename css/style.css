@@ -93,6 +93,7 @@ main {
 .head .headImage img {
   width: 100%;
   height: 100%;
+  border-radius: 0px 0px 8px 8px;
 }
 .head .centerContent{
 position: absolute;
@@ -123,16 +124,25 @@ text-align: center;
 }
 .allCars .cars .car {
   border-radius: 12px;
-  background: #0e0f1085;
+  background: white;
   box-shadow: 2px 4px 8px 0px rgba(173, 173, 173, 0.16) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 22px 16px;
+  padding: 8px 16px 22px ;
   display: flex;
   justify-content: space-between;
-  gap: 26px;
+  gap: 14px;
   width: 380px;
   max-width: 96%;
   cursor: pointer;
   flex-direction: column;
+}
+.allCars .cars .car h2{
+  text-align: center;
+  color: #222;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+margin: 0;
 }
 .allCars .cars .car .part1 {
   display: flex;
@@ -142,6 +152,11 @@ text-align: center;
 }
 .allCars .cars .car  .imageCar {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
 }
 .allCars .cars .car  .imageCar img {
  
