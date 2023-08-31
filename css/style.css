@@ -159,7 +159,7 @@ margin: 0;
   justify-content: center;
 }
 .allCars .cars .car  .imageCar img {
- 
+  max-width: 148px;
 }
 .allCars .cars .car .carLinks {
   display: flex;
