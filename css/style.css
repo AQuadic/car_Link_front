@@ -23,7 +23,7 @@
   font-weight: 200;
   font-style: normal;
 }
-p{
+p {
   margin: 0;
 }
 ul {
@@ -55,25 +55,24 @@ html::-webkit-scrollbar-track {
 body {
   display: flex;
   justify-content: center;
-  width: 430px;
-  margin: auto;
   padding: 0px !important;
-  max-width: 100%;
+ 
   background-image: url("../images/backImage.webp");
   backdrop-filter: blur(11px);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main {
   padding-bottom: 26px;
-  
+  width: 430px;
+  margin: auto;
+
+  max-width: 100%;
 }
 .head {
   position: relative;
   margin-bottom: 14px;
- 
 }
 .head h1 {
   color: #fff;
@@ -204,7 +203,6 @@ main {
   margin: 1.75rem auto;
 }
 .btn-close {
-
   position: absolute;
   top: 6px;
   right: 6px;
