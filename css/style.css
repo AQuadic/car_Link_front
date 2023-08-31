@@ -57,7 +57,6 @@ body {
   justify-content: center;
   padding: 0px !important;
   background-image: url("../images/backImage.webp");
-  backdrop-filter: blur(11px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -73,12 +72,13 @@ main {
   margin-bottom: 14px;
 }
 .head h1 {
-  color: #fff;
+  color: #FF9CA3;
   font-size: 14px;
+  font-weight: 500;
   width: max-content;
   font-weight: 500;
   border-radius: 0px 0px 16px 16px;
-  background: #da0d1c;
+  background: #da0d1b21;
   padding: 5px 13px;
   position: absolute;
   top: 0;
@@ -94,21 +94,27 @@ main {
   width: 100%;
   height: 100%;
 }
+.head .centerContent{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.head .centerContent img{
+  
+  display: block;
+  margin: 0px auto 12px;
+}
+.head .centerContent p{
+  color: #FFF;
+font-size: 15px;
+font-weight: 500;
+text-align: center;
+}
 .allCars {
 }
-.allCars .headTitle {
-  max-width: 100%;
-  margin: 0px auto 6px;
-  display: block;
-}
 
-.allCars .title2 {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 16px;
-  text-align: center;
-}
+
 .allCars .cars {
   display: flex;
   flex-direction: column;
@@ -116,9 +122,9 @@ main {
   gap: 22px;
 }
 .allCars .cars .car {
-  border-radius: 13px;
-  border: 1px solid #dedede;
-  background: #f8f8f8;
+  border-radius: 12px;
+  background: #0e0f1085;
+  box-shadow: 2px 4px 8px 0px rgba(173, 173, 173, 0.16) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 22px 16px;
   display: flex;
   justify-content: space-between;
@@ -126,6 +132,7 @@ main {
   width: 380px;
   max-width: 96%;
   cursor: pointer;
+  flex-direction: column;
 }
 .allCars .cars .car .part1 {
   display: flex;
@@ -133,41 +140,59 @@ main {
   justify-content: space-between;
   gap: 20px;
 }
-.allCars .cars .car .part1 .imageCar {
+.allCars .cars .car  .imageCar {
+  margin: auto;
 }
-.allCars .cars .car .part1 .imageCar img {
-  width: 148px;
-  height: auto;
+.allCars .cars .car  .imageCar img {
+ 
 }
-.allCars .cars .car .part1 .carLinks {
+.allCars .cars .car .carLinks {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 26px;
 }
-.allCars .cars .car .part1 .carLinks a {
+.allCars .cars .car  .carLinks a {
   width: 30px;
   height: 30px;
 }
-.allCars .cars .car .part1 .carLinks a img {
+.allCars .cars .car  .carLinks a img {
   width: 100%;
   height: 100%;
 }
 .allCars .cars .car .part2 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 6px;
+  gap: 11px;
 }
 .allCars .cars .car .part2 .part {
-  width: 171px;
-  padding: 3px 10px;
   align-items: center;
   display: flex;
-  gap: 21px;
   border-radius: 8px;
-  background: #4a4a4a;
+}
+.allCars .cars .car .part2 .part.whatsApp{
+  background: #06993D;
+  gap: 16px;
+  width: 160px;
+  padding: 4px 0px 4px 12px;
+}
+.allCars .cars .car .part2 .part.call{
+  background: #1877F2;
+  padding: 4px 16px 4px 12px;
+
+gap: 16px;
+
+}
+.allCars .cars .car .part2 .part.map{
+  width: 32px;
+height: 32px;
+background: #44C868;
+justify-content: center;
+}
+.allCars .cars .car .part2 .part.map img{
+  width: 26px;
+height: 26px;
 }
 .allCars .cars .car .part2 .part img {
   max-height: 90%;
@@ -184,16 +209,27 @@ main {
   .allCars .cars .car .part2 .part p {
     font-size: 14px;
   }
-  .allCars .cars .car .part1 .carLinks {
+  .allCars .cars .car  .carLinks {
     gap: 20px;
   }
   .allCars .cars .car {
-    gap: 12px;
+    gap: 20px;
   }
-  .allCars .cars .car .part2 .part {
-    width: 140px;
-    gap: 10px;
-  }
+  .allCars .cars .car .part2 .part.whatsApp {
+  
+    gap: 6px;
+    width: 130px;
+   
+}
+.allCars .cars .car .part2 .part.call {
+ 
+  padding: 4px 10px 4px 10px;
+  gap: 10px;
+}
+.allCars .cars .car .part2 {
+ 
+  gap: 8px;
+}
 }
 /*end style*/
 .modal-dialog {
