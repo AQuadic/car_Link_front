@@ -69,52 +69,99 @@ main {
 }
 .head {
   position: relative;
-  margin-bottom: 14px;
 }
-.head h1 {
-  color: #FF9CA3;
-  font-size: 14px;
-  font-weight: 500;
-  width: max-content;
-  font-weight: 500;
-  border-radius: 0px 0px 16px 16px;
-  background: #da0d1b21;
-  padding: 5px 13px;
+.head .lang {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 14px;
+  right: 14px;
+  z-index: 50;
+  display: flex;
+  width: 72px;
+  height: 28px;
+  padding: 7px 14px 12px 14px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  background: #fff;
+  border: none;
+
+  text-align: center;
+  font-family: Expo Arabic;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
 }
 .head .headImage {
   width: 430px;
-  height: 240px;
+  height: 290px;
   max-width: 100%;
+  background-image: url("../images/headImage.webp");
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .head .headImage img {
   width: 100%;
   height: 100%;
   border-radius: 0px 0px 8px 8px;
 }
-.head .centerContent{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
+.head .centerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.head .centerContent img{
-  
+.head .centerContent img {
   display: block;
   margin: 0px auto 12px;
 }
-.head .centerContent p{
-  color: #FFF;
-font-size: 15px;
-font-weight: 500;
-text-align: center;
+.head .centerContent p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+.head2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+.head2 img {
+  display: block;
+  margin: auto;
+}
+.head2 .dec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head2 .dec h1 {
+  color: #1b1b1b;
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* font-family: Expo Arabic; */
+}
+.head2 .dec h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  /* font-family: Expo Arabic; */
 }
 .allCars {
+ 
+  padding-top: 24px;
 }
-
 
 .allCars .cars {
   display: flex;
@@ -123,136 +170,179 @@ text-align: center;
   gap: 22px;
 }
 .allCars .cars .car {
-  border-radius: 12px;
-  background: white;
-  box-shadow: 2px 4px 8px 0px rgba(173, 173, 173, 0.16) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 8px 16px 22px ;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  box-shadow: 2px 4px 8px 0px rgba(173, 173, 173, 0.16) inset,
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 14px 12px 14px 15px;
   display: flex;
   justify-content: space-between;
-  gap: 14px;
-  width: 380px;
+
+  width: 408px;
   max-width: 96%;
   cursor: pointer;
   flex-direction: column;
 }
-.allCars .cars .car h2{
+.allCars .cars .car h2 {
   text-align: center;
   color: #222;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.5px;
-margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin: 0;
 }
 .allCars .cars .car .part1 {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  margin-bottom: 16px;
+  align-items: flex-start;
 }
-.allCars .cars .car  .imageCar {
-  margin: auto;
+.allCars .cars .car .part1 .imageCar{}
+.allCars .cars .car .part1 .imageCar img{}
+.allCars .cars .car .part1 .imageCar h2{
+  color: #000;
+text-align: start;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0.5px;
+}
+.allCars .cars .car .part1 .location{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  direction: ltr;
+}
+.allCars .cars .car .part1 .location p{
+  color: #000;
+text-align: right;
+font-size: 8px;
+font-weight: 400;
+line-height: 9px;
+letter-spacing: 0.5px;
+max-width: 38px;
+}
+.allCars .cars .car .part1 .location img{}
+.allCars .cars .car .imageCar {
+max-width: 177px;
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  align-items: center;
-  justify-content: center;
+  gap: 10px;
 }
-.allCars .cars .car  .imageCar img {
+.allCars .cars .car .imageCar img {
   max-width: 148px;
 }
-.allCars .cars .car .carLinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 26px;
-}
-.allCars .cars .car  .carLinks a {
-  width: 30px;
-  height: 30px;
-}
-.allCars .cars .car  .carLinks a img {
-  width: 100%;
-  height: 100%;
-}
+
 .allCars .cars .car .part2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 11px;
+  gap: 12px;
+  direction: ltr;
 }
 .allCars .cars .car .part2 .part {
   align-items: center;
   display: flex;
-  border-radius: 8px;
+  border-radius: 5px;
+  flex-direction: row-reverse;
+  padding: 8px 6px;
+  width: 116px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
-.allCars .cars .car .part2 .part.whatsApp{
-  background: #06993D;
-  gap: 16px;
-  width: 160px;
-  padding: 4px 0px 4px 12px;
-}
-.allCars .cars .car .part2 .part.call{
-  background: #1877F2;
-  padding: 4px 16px 4px 12px;
+.allCars .cars .car .part2 .part.whatsApp {
+  background: #25d366;
 
-gap: 16px;
-
+  gap: 6px;
 }
-.allCars .cars .car .part2 .part.map{
+.allCars .cars .car .part2 .part.call {
+  background: #0a66c2;
+
+  gap: 14px;
+}
+.allCars .cars .car .part2 .part.map {
   width: 32px;
-height: 32px;
-background: #44C868;
-justify-content: center;
+  height: 32px;
+  background: #44c868;
+  justify-content: center;
 }
-.allCars .cars .car .part2 .part.map img{
+.allCars .cars .car .part2 .part.insta {
+  gap: 3px;
+  background: linear-gradient(277deg, #bd01aa 52.3%, #e60131 94.33%);
+}
+.allCars .cars .car .part2 .part.map img {
   width: 26px;
-height: 26px;
+  height: 26px;
 }
 .allCars .cars .car .part2 .part img {
   max-height: 90%;
 }
 .allCars .cars .car .part2 .part p {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.5px;
+}
+.callCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.allCars .cars  .callCenter h2{
+  text-align: start;
+  color: #000;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 139%
+}
+.allCars .cars  .callCenter h2:first-of-type{
+  text-align: end;
+}
+.partCallCenter .part2 {
+  margin-top: 16px;
+}
+.partCallCenter .part2 .part{
+  width: 100%;
+  flex: 1;
+  gap: 16px;
+}
+.partCallCenter .part2 .part.whatsApp{
+  background: #25D366;
+  border-radius: 5px;
+
+}
+.partCallCenter .part2 .part.call{
+  border-radius: 5px;
+background: #0A66C2;
 }
 
 @media (max-width: 430px) {
   .allCars .cars .car .part2 .part p {
     font-size: 14px;
   }
-  .allCars .cars .car  .carLinks {
-    gap: 20px;
-  }
-  .allCars .cars .car {
-    gap: 20px;
-  }
+
+
   .allCars .cars .car .part2 .part.whatsApp {
-  
     gap: 6px;
     width: 130px;
-   
+  }
+  .allCars .cars .car .part2 .part.call {
+    padding: 4px 10px 4px 10px;
+    gap: 10px;
+  }
+  .allCars .cars .car .part2 {
+    gap: 8px;
+  }
 }
-.allCars .cars .car .part2 .part.call {
- 
-  padding: 4px 10px 4px 10px;
-  gap: 10px;
-}
-.allCars .cars .car .part2 {
- 
-  gap: 8px;
-}
-}
+
 /*end style*/
-.modal-dialog {
-  max-width: 400px;
-  margin: 1.75rem auto;
-}
-.btn-close {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-}
+
