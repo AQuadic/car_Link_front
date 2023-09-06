@@ -12,7 +12,7 @@
   <body>
     <main>
       <section class="head">
-        <button class="lang">العربية</button>
+        <button class="lang" onclick="changeLanguage()">العربية</button>
         <div class="headImage"></div>
       </section>
       <div class="head2">
@@ -253,8 +253,23 @@
       </section>
     </main>
 
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+   
+    <script>
+     // Function to change the language and direction
+    function changeLanguage() {
+      var htmlElement = document.documentElement;
+      var currentLanguage = htmlElement.lang;
+      var currentDirection = htmlElement.dir;
+
+      // Toggle between Arabic and English, and RTL and LTR
+      if (currentLanguage === "ar") {
+        htmlElement.lang = "en";
+        htmlElement.dir = "ltr";
+      } else {
+        htmlElement.lang = "ar";
+        htmlElement.dir = "rtl";
+      }
+    }
+    </script>
   </body>
 </html>

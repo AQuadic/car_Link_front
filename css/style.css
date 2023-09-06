@@ -96,6 +96,10 @@ main {
   font-weight: 700;
   letter-spacing: 0.42px;
 }
+html[dir=rtl] .head .lang {
+  right: auto;
+  left: 14px;
+}
 .head .headImage {
   width: 430px;
   height: 290px;
